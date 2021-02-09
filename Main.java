@@ -26,9 +26,9 @@ public class Main {
         while (j <= lengthStudents) {
             System.out.println("Student " + j + " Informations:");
             System.out.print("Enter FirstName: ");
-            String firstNameInput = sc.nextLine();
+            String firstNameInput = sc.next();
             System.out.print("Enter LastName: ");
-            String lastNameInput = sc.nextLine();
+            String lastNameInput = sc.next();
             System.out.print("Enter Level: ");
             int igeInput = sc.nextInt();
             System.out.println("Successfully created!");
