@@ -12,14 +12,11 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("INTTIC Semester Rate");
         System.out.println("-------------------");
-        ArrayList<Student> students = addStudent(2, "Aymen", "Sekhri", 43);
-        for (int i = 0; i < students.size(); i++) {
-            students.get(i).getInfos();
-            System.out.println("-------------------");
-        }
+        ArrayList<Student> students = addStudent(2);
+        showStudentsInfos(students);
     }
 
-    public static ArrayList<Student> addStudent(int lengthStudents, String firstName, String lastName, int ige) {
+    public static ArrayList<Student> addStudent(int lengthStudents) {
         ArrayList<Student> students = new ArrayList<>();
         Scanner sc = new Scanner(System.in);
         int j = 1;
@@ -33,8 +30,15 @@ public class Main {
             int igeInput = sc.nextInt();
             System.out.println("Successfully created!");
             students.add(new Student(firstNameInput, lastNameInput, igeInput));
-            j++;           
+            j++;
         }
         return students;
+    }
+
+    public static void showStudentsInfos(ArrayList<Student> students) {
+        for (int i = 0; i < students.size(); i++) {
+            students.get(i).getInfos();
+            System.out.println("-------------------");
+        }
     }
 }
