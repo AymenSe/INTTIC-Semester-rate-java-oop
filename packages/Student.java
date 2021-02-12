@@ -3,10 +3,10 @@ package packages;
 public class Student {
 
     // Private Attributs
-    private String firstName;
-    private String lastName;
-    private int level;
-    private float finalRate = 0;
+    public String firstName;
+    public String lastName;
+    public int level;
+    public float finalRate = 0;
 
     // Constructor
     public Student(String firstName, String lastName, int level) {
