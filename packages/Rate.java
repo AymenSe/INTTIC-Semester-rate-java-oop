@@ -1,4 +1,4 @@
-package rate;
+package packages;
 
 public class Rate {
     

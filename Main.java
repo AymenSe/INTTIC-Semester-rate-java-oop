@@ -1,11 +1,7 @@
-import student.*;
-import rate.*;
+import packages.*;
 
 import java.util.ArrayList;
 import java.util.Scanner; 
-
-
-import material.*;
 
 
 public class Main {

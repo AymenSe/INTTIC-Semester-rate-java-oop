@@ -1,4 +1,4 @@
-package material;
+package packages;
 
 public class Material {
     
