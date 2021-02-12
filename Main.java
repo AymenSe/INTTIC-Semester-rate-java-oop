@@ -1,9 +1,8 @@
 import packages.*;
 
 import java.util.ArrayList;
-import java.util.Scanner; 
-
-
+import java.util.Scanner;
+    
 public class Main {
     public static void main(String[] args) {
         System.out.println("INTTIC Semester Rate");
@@ -11,10 +10,11 @@ public class Main {
         ArrayList<Student> students = addStudent(2);
         showStudentsInfos(students);
     }
+    
+    static Scanner sc = new Scanner(System.in);
 
     public static ArrayList<Student> addStudent(int lengthStudents) {
         ArrayList<Student> students = new ArrayList<>();
-        Scanner sc = new Scanner(System.in);
         int j = 1;
         while (j <= lengthStudents) {
             System.out.println("Student " + j + " Informations:");
@@ -23,11 +23,11 @@ public class Main {
             System.out.print("Enter LastName: ");
             String lastNameInput = sc.next();
             System.out.print("Enter Level: ");
-            int igeInput = sc.nextInt();
+            int igeInput = sc.nextInt();  
             System.out.println("Successfully created!");
             students.add(new Student(firstNameInput, lastNameInput, igeInput));
             j++;
-        }
+        }   
         return students;
     }
 
