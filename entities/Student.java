@@ -1,4 +1,6 @@
-package packages;
+package entities;
+import java.util.ArrayList;
+
 
 
 public class Student {
@@ -8,6 +10,7 @@ public class Student {
     private String lastName;
     private int level;
     private float finalRate = 0;
+    private ArrayList<Material> materials = new ArrayList<Material>();
 
     // Constructor
     public Student(String firstName, String lastName, int level) {
@@ -29,5 +32,7 @@ public class Student {
     public float getFinalRate() {return this.finalRate;}
     public void setFinalRate(float finalRate) { this.finalRate = finalRate;}
 
+    public ArrayList<Material> getMaterials() {return materials;}
+    public void setMaterials(ArrayList<Material> materials) {this.materials = materials;}
 
 }
